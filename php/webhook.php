@@ -26,3 +26,6 @@ $headers .= 'From: MyCompany <hello@yourwebsite.com>' . "\r\n";
 
 // Mail it
 mail($customerEmail, $subject, $emailTemplate, $headers);
+
+//tell CodeElements that the webhook executed successfully
+exit('*ok*');
